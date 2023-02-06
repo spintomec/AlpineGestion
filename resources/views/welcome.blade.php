@@ -46,10 +46,12 @@
                         }
                         if (userIDs.length <= 6 && userIDs.length > 3 ) {
                             this.$refs.count.classList.remove('text-red-500')
+                            
                             this.$refs.count.classList.add('text-yellow-500')
                         }
                         if (userIDs.length <= 10 && userIDs.length > 6 ) {
                             this.$refs.count.classList.add('text-red-500')
+                            this.$refs.count.classList.remove('text-red-800')
                         }
                         if (userIDs.length == this.users.length ) {
                             this.$refs.count.classList.add('text-red-800')
